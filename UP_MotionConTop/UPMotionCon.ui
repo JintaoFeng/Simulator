@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UPMotionCon</class>
+ <widget class="QMainWindow" name="UPMotionCon">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1048</width>
+    <height>643</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>UPMotionCon</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="displayMessage">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>320</y>
+      <width>461</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="connectBtn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Connect</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>160</y>
+      <width>181</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLineEdit" name="kpEdit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="KiEdit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="KdEdit"/>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="kpLabel">
+         <property name="text">
+          <string>Kp</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="KiLabel">
+         <property name="text">
+          <string>Ki</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="KdLabel">
+         <property name="text">
+          <string>Kd</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="1">
+      <widget class="QFrame" name="gridFrame">
+       <layout class="QGridLayout" name="gridLayout"/>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QComboBox" name="axisComboBox">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>9</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>0</y>
+      <width>181</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="posLabel">
+       <property name="text">
+        <string>pos</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="velLabel">
+       <property name="text">
+        <string>vel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="accLabel">
+       <property name="text">
+        <string>acc</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="jerkLabel">
+       <property name="text">
+        <string>jerk</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="snapLabel">
+       <property name="text">
+        <string>snap</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="posEdit"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="velEdit"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="accEdit"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="jerkEdit"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="snapEdit"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="enableBtn">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>40</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ENABLE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="forwardBtn">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>70</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MOVE_REL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="moveAbs">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>100</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MOVE_ABS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startMotionBtn">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>130</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>startMotion</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>151</width>
+      <height>98</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_4">
+     <item row="3" column="0">
+      <widget class="QLabel" name="IPLabel">
+       <property name="text">
+        <string>IP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="IPText"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="portlabel">
+       <property name="text">
+        <string>PORT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="portText"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="connectTypeBox">
+       <item>
+        <property name="text">
+         <string>TCP/IP</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>simulater</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="jogStopBtn">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>160</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>jogStop</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="recordBtn">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>190</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>数据记录</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveBtn">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>220</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>保存文件</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>230</y>
+      <width>231</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_5">
+     <item row="1" column="0">
+      <widget class="QLabel" name="posErrorLabel">
+       <property name="text">
+        <string>PosError</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="posErrorLineEdit"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="conDistLabel">
+       <property name="text">
+        <string>ConDist</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="conDistLineEdit"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="clearBtn">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>250</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>clear</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>0</y>
+      <width>231</width>
+      <height>219</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_3">
+     <item row="0" column="0">
+      <widget class="QLabel" name="posViewLabel">
+       <property name="text">
+        <string>位置</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="posViewEdit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="velViewEdit_2">
+       <property name="text">
+        <string>速度</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="velViewEdit"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="accViewEdit_2">
+       <property name="text">
+        <string>加速度</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="accViewEdit"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="motStatelabel">
+       <property name="text">
+        <string>motState</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="motStateEdit"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="axisStateLabel">
+       <property name="text">
+        <string>axisState</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="axisState"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="refPosLabel">
+       <property name="text">
+        <string>规划位置</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="refPosEdit"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="refVellabel">
+       <property name="text">
+        <string>规划速度</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="refVelEdit"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="setFPosLabel">
+       <property name="text">
+        <string>设定反馈位置</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="setFPosEdit"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1048</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

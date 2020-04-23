@@ -1,0 +1,708 @@
+Document file - DO NOT EDIT
+
+<BEGIN> BUILD_PPC604gnu_BUILDRULE
+MotionPPC.out
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_AR
+arppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_ARCHIVE
+$(PRJ_DIR)/PPC604gnu/MotionPPC.a
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_AS
+ccppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CC
+ccppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CC_ARCH_SPEC
+-mcpu=604 -mstrict-align
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CFLAGS
+-mlongcall \
+	-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-fno-builtin \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CFLAGS_AS
+-g \
+	-mcpu=604 \
+	-mstrict-align \
+	-fno-builtin \
+	-P \
+	-xassembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PPC604 \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_CPP
+ccppc -E -P
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_HEX_FLAGS
+
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LD
+ldppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LDFLAGS
+-X -N
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LD_PARTIAL
+ccppc -r -nostdlib -Wl,-X
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_LD_PARTIAL_FLAGS
+-X -r
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_NM
+nmppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_DEPEND
+-M -w
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_GENERATE_DEPENDENCY_FILE
+-MD
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_LANG_C
+-xc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_OPTION_UNDEFINE_MACRO
+-U
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_POST_BUILD_RULE
+
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_PRJ_LIBS
+
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_SIZE
+sizeppc
+<END>
+
+<BEGIN> BUILD_PPC604gnu_MACRO_TOOL_FAMILY
+gnu
+<END>
+
+<BEGIN> BUILD_PPC604gnu_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} \
+	{$(WIND_BASE)/target/src/} \
+	{$(WIND_BASE)/target/config/}
+<END>
+
+<BEGIN> BUILD_PPC604gnu_TC
+::tc_PPC604gnu
+<END>
+
+<BEGIN> BUILD_RULE_MotionPPC.out
+
+<END>
+
+<BEGIN> BUILD_RULE_MotionPPC.pl
+
+<END>
+
+<BEGIN> BUILD_RULE_archive
+
+<END>
+
+<BEGIN> BUILD_RULE_objects
+
+<END>
+
+<BEGIN> BUILD__CURRENT
+PPC604gnu
+<END>
+
+<BEGIN> BUILD__LIST
+PPC604gnu
+<END>
+
+<BEGIN> CORE_INFO_TYPE
+::prj_vxApp
+<END>
+
+<BEGIN> CORE_INFO_VERSION
+2.2
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/A10898.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/A10898.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/A10898.H
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/A10898.c_objects
+A10898.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/A10898.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/CMD.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/CMD.c_dependencies
+$(PRJ_DIR)/CMD.h \
+	$(PRJ_DIR)/FileReadWrite.h \
+	$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h \
+	$(PRJ_DIR)/TrajHandler.h \
+	$(PRJ_DIR)/Rtcontrol.h \
+	$(PRJ_DIR)/GetData.h \
+	$(PRJ_DIR)/SingleTPG.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/CMD.c_objects
+CMD.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/CMD.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ComWithWin.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ComWithWin.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/ComWithWin.h \
+	$(PRJ_DIR)/CMD.h \
+	$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h \
+	$(PRJ_DIR)/TrajHandler.h \
+	$(PRJ_DIR)/ConParamHandler.h \
+	$(PRJ_DIR)/main.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ComWithWin.c_objects
+ComWithWin.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ComWithWin.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ConCalc.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ConCalc.c_dependencies
+$(PRJ_DIR)/ConCalc.h \
+	$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ConCalc.c_objects
+ConCalc.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ConCalc.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ConParamHandler.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ConParamHandler.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/ConParamHandler.h \
+	$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h \
+	$(PRJ_DIR)/ComWithWin.h \
+	$(PRJ_DIR)/Controller.h \
+	$(PRJ_DIR)/TrajHandler.h \
+	$(PRJ_DIR)/main.h \
+	$(PRJ_DIR)/SingleTPG.h \
+	$(PRJ_DIR)/GetData.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ConParamHandler.c_objects
+ConParamHandler.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ConParamHandler.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ConParamInit.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ConParamInit.c_dependencies
+$(PRJ_DIR)/ConParamInit.h \
+	$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h \
+	$(PRJ_DIR)/rtcontrol.h \
+	$(PRJ_DIR)/TrajHandler.h \
+	$(PRJ_DIR)/ConCalc.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ConParamInit.c_objects
+ConParamInit.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ConParamInit.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/FileReadWrite.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/FileReadWrite.c_dependencies
+$(PRJ_DIR)/FileReadWrite.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/FileReadWrite.c_objects
+FileReadWrite.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/FileReadWrite.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/GetData.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/GetData.c_dependencies
+$(PRJ_DIR)/GetData.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h \
+	$(PRJ_DIR)/rtcontrol.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/GetData.c_objects
+GetData.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/GetData.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/N1225A.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/N1225A.c_dependencies
+$(PRJ_DIR)/N1225A.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/N1225A.c_objects
+N1225A.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/N1225A.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/SingleTPG.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/SingleTPG.c_dependencies
+$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/ast_M58.h \
+	$(PRJ_DIR)/ast_Header.h \
+	$(PRJ_DIR)/SingleTPG.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/GetData.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/SingleTPG.c_objects
+SingleTPG.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/SingleTPG.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/StateMachine.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/StateMachine.c_dependencies
+$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h \
+	$(PRJ_DIR)/rtcontrol.h \
+	$(PRJ_DIR)/TrajHandler.h \
+	$(PRJ_DIR)/FileReadWrite.h \
+	$(PRJ_DIR)/CMD.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/StateMachine.c_objects
+StateMachine.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/StateMachine.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/TrajGen_4OrderPoly.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/TrajGen_4OrderPoly.c_dependencies
+$(PRJ_DIR)/TrajGen_4OrderPoly.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/TrajGen_4OrderPoly.c_objects
+TrajGen_4OrderPoly.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/TrajGen_4OrderPoly.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/TrajHandler.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/TrajHandler.c_dependencies
+$(PRJ_DIR)/TrajHandler.h \
+	$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h \
+	$(PRJ_DIR)/rtcontrol.h \
+	$(PRJ_DIR)/GetData.h \
+	$(PRJ_DIR)/CMD.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/ast_M58.h \
+	$(PRJ_DIR)/SingleTPG.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/TrajHandler.c_objects
+TrajHandler.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/TrajHandler.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ZMI4104.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ZMI4104.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/ZMI4104.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ZMI4104.c_objects
+ZMI4104.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ZMI4104.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ast_Flex10k.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ast_Flex10k.c_dependencies
+$(PRJ_DIR)/ast_Header.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ast_Flex10k.c_objects
+ast_Flex10k.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ast_Flex10k.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ast_M58.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ast_M58.c_dependencies
+$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/ast_M58.h \
+	$(PRJ_DIR)/ast_Header.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ast_M58.c_objects
+ast_M58.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ast_M58.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ast_PLD_Load.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ast_PLD_Load.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/ast_Header.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ast_PLD_Load.c_objects
+ast_PLD_Load.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/ast_PLD_Load.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/controller.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/controller.c_dependencies
+$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/controller.c_objects
+controller.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/controller.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/main.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/main.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/posixtimer.h \
+	$(PRJ_DIR)/ConParamInit.h \
+	$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h \
+	$(PRJ_DIR)/rtcontrol.h \
+	$(PRJ_DIR)/ComWithWin.h \
+	$(PRJ_DIR)/ZMI4104.h \
+	$(PRJ_DIR)/ast_M58.h \
+	$(PRJ_DIR)/N1225A.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/main.c_objects
+main.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/main.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/pmc16aiodrv.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/pmc16aiodrv.c_dependencies
+$(PRJ_DIR)/pmc16aiodrv.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/pmc16aiodrv.c_objects
+pmc16aiodrv.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/pmc16aiodrv.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/posixtimers.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/posixtimers.c_dependencies
+$(PRJ_DIR)/posixtimer.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/rtcontrol.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/posixtimers.c_objects
+posixtimers.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/posixtimers.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/rtcontrol.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/rtcontrol.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stdarg.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/va-ppc.h \
+	$(PRJ_DIR)/rtcontrol.h \
+	$(PRJ_DIR)/posixtimer.h \
+	$(PRJ_DIR)/ZMI4104.h \
+	$(PRJ_DIR)/pmc16aiodrv.h \
+	$(PRJ_DIR)/ComWithWin.h \
+	$(PRJ_DIR)/StateMachine.h \
+	$(PRJ_DIR)/EnumDefines.h \
+	$(PRJ_DIR)/controller.h \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.h \
+	$(PRJ_DIR)/ConParamInit.h \
+	$(PRJ_DIR)/ast_Header.h \
+	$(PRJ_DIR)/CMD.h \
+	$(PRJ_DIR)/main.h \
+	$(PRJ_DIR)/FileReadWrite.h \
+	$(PRJ_DIR)/ast_M58.h \
+	$(PRJ_DIR)/GetData.h \
+	$(PRJ_DIR)/SingleTPG.h \
+	$(PRJ_DIR)/N1225A.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/rtcontrol.c_objects
+rtcontrol.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/rtcontrol.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/trajplaner.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/trajplaner.c_dependencies
+$(PRJ_DIR)/trajplaner.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/powerpc-wrs-vxworks/gcc-2.96/include/stddef.h \
+	$(PRJ_DIR)/Rtcontrol.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/trajplaner.c_objects
+trajplaner.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/trajplaner.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> PROJECT_FILES
+$(PRJ_DIR)/pmc16aiodrv.c \
+	$(PRJ_DIR)/ZMI4104.c \
+	$(PRJ_DIR)/rtcontrol.c \
+	$(PRJ_DIR)/posixtimers.c \
+	$(PRJ_DIR)/TrajGen_4OrderPoly.c \
+	$(PRJ_DIR)/CMD.c \
+	$(PRJ_DIR)/ComWithWin.c \
+	$(PRJ_DIR)/controller.c \
+	$(PRJ_DIR)/ast_Flex10k.c \
+	$(PRJ_DIR)/ast_PLD_Load.c \
+	$(PRJ_DIR)/main.c \
+	$(PRJ_DIR)/ConParamInit.c \
+	$(PRJ_DIR)/ConParamHandler.c \
+	$(PRJ_DIR)/ConCalc.c \
+	$(PRJ_DIR)/TrajHandler.c \
+	$(PRJ_DIR)/StateMachine.c \
+	$(PRJ_DIR)/FileReadWrite.c \
+	$(PRJ_DIR)/GetData.c \
+	$(PRJ_DIR)/ast_M58.c \
+	$(PRJ_DIR)/SingleTPG.c \
+	$(PRJ_DIR)/N1225A.c \
+	$(PRJ_DIR)/trajplaner.c \
+	$(PRJ_DIR)/A10898.c
+<END>
+
+<BEGIN> userComments
+<Enter description here>
+<END>
+

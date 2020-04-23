@@ -1,0 +1,4 @@
+---- InitCoarseAxis Matches (3 in 2 files) ----
+ConParamInit.c:	InitCoarseAxis(Machine.coarseStage.arrAxis,COARSE_AXIS_NUM);
+ConParamInit.c:void InitCoarseAxis(Axis *pAxis,int iAxisNum)
+ConParamInit.h:void InitCoarseAxis(Axis *pAxis,int iAxisNum);
